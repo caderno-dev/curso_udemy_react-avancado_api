@@ -1107,6 +1107,13 @@
   dependencies:
     "@ucast/mongo2js" "^1.3.0"
 
+"@ckeditor/ckeditor5-react@^4.0.0":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-react/-/ckeditor5-react-4.0.1.tgz#fc09e21295f115b8806f4122f63c4073f06d2b82"
+  integrity sha512-5qKZn8EVBeEYzmDrgpq31dC2rqcJ341xKQmuj7JYzT9szsuIIzI4zOm3cf9IIglRXVWCuWvELJs8qmRNW19dzg==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@codemirror/autocomplete@^6.0.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@codemirror/autocomplete/-/autocomplete-6.4.0.tgz#76ac9a2a411a4cc6e13103014dba5e0fe601da5a"
@@ -1598,7 +1605,7 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.1.tgz#076d78ce99822258cf813ecc1e7fa460fa74d052"
   integrity sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==
 
-"@internationalized/number@^3.1.1":
+"@internationalized/number@^3.0.2", "@internationalized/number@^3.1.1":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@internationalized/number/-/number-3.1.2.tgz#4482a6ac573acfb18efd354a42008af20da6c89c"
   integrity sha512-Mbys8SGsn0ApXz3hJLNU+d95B8luoUbwnmCpBwl7d63UmYAlcT6TRDyvaS/vwdbElXLcsQJjQCu0gox2cv/Tig==
@@ -2107,6 +2114,15 @@
     compute-scroll-into-view "^1.0.17"
     prop-types "^15.7.2"
 
+"@strapi/design-system@^0.0.1-alpha.70":
+  version "0.0.1-alpha.79"
+  resolved "https://registry.yarnpkg.com/@strapi/design-system/-/design-system-0.0.1-alpha.79.tgz#23e6a7f73383b72148c926fa74ed0ba1acc32f0a"
+  integrity sha512-o/F55Qjwao1HkqKcL8ovQ280QijJH8dLfzP+t3XMNL5Ihh3HBD2wcMS6dOsrnNDGdDE0LWQfG8bDbLPmWHmk1A==
+  dependencies:
+    "@internationalized/number" "^3.0.2"
+    compute-scroll-into-view "^1.0.17"
+    prop-types "^15.7.2"
+
 "@strapi/generate-new@4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@strapi/generate-new/-/generate-new-4.6.0.tgz#07092bcf43881b9ad2098da2b8bc0807c5e7fdd8"
@@ -2139,7 +2155,7 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@4.6.0":
+"@strapi/helper-plugin@4.6.0", "@strapi/helper-plugin@^4.1.5":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@strapi/helper-plugin/-/helper-plugin-4.6.0.tgz#8ea5bbcad4df688ba08fa20f19977056af4d9268"
   integrity sha512-mMDY5kYuN7xEiOIO6P1/KltEssG7uwwcf+9pH0BHJc2jeO3SL5MvmBku7qjs2Nn+5uYcOezRBP9yCRP59eyBCQ==
@@ -4014,6 +4030,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+ckeditor5-build-strapi-wysiwyg@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ckeditor5-build-strapi-wysiwyg/-/ckeditor5-build-strapi-wysiwyg-2.1.1.tgz#da94549e812e7c3438ec3a16833ebc8f0c92efa2"
+  integrity sha512-Mma+bcVUZ8xH+PEHoB8FroMPocIgs+6Fqg94Q4yqOYI+xXRWAds3GzY8SsZC43Dlo9NgN72mWP4W8cZ0xLUIow==
 
 class-utils@^0.3.5:
   version "0.3.6"
@@ -9901,6 +9922,18 @@ std-env@^3.0.1:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.2.tgz#af27343b001616015534292178327b202b9ee955"
   integrity sha512-uUZI65yrV2Qva5gqE0+A7uVAvO40iPo6jGhs7s8keRfHCmtg+uB2X6EiLGCI9IgL1J17xGhvoOqSz79lzICPTA==
+
+strapi-plugin-ckeditor5@^2.1.1-rc.1:
+  version "2.1.1-rc.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-ckeditor5/-/strapi-plugin-ckeditor5-2.1.1-rc.1.tgz#b0d111375be71b554dd64a116898af62f47c785a"
+  integrity sha512-8bFcSn6Gp5NKgIuT/+Q2MT7grxWJ5un1ckuyTgH/7MyuBAbUTszUsma4hzd0yXo9ZXr+mfYsaLI8pXmrSlWOvA==
+  dependencies:
+    "@ckeditor/ckeditor5-react" "^4.0.0"
+    "@strapi/design-system" "^0.0.1-alpha.70"
+    "@strapi/helper-plugin" "^4.1.5"
+    ckeditor5-build-strapi-wysiwyg "^2.1.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
 
 stream-browserify@^3.0.0:
   version "3.0.0"
