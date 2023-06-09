@@ -5,7 +5,12 @@ const config = {
   head: {
     favicon: favicon
   },
-  tutorials: false
+  tutorials: false,
+  translations: {
+    en: {
+      "app.components.LeftMenu.navbrand.title": "Won Games"
+    }
+  }
 };
 
 const bootstrap = (app) => {
